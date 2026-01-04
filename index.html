@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase – E-Commerce UI</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header>
+  <div class="logo" onclick="alertAction('Home clicked')">ShopEase</div>
+
+  <!-- Desktop Navigation -->
+  <nav class="nav-links">
+    <a href="#" onclick="alertAction('Home clicked')">Home</a>
+    <a href="#" onclick="alertAction('Products clicked')">Products</a>
+    <a href="#" onclick="alertAction('Categories clicked')">Categories</a>
+    <a href="#" onclick="alertAction('Contact clicked')">Contact</a>
+  </nav>
+
+  <!-- Desktop Buttons -->
+  <div class="header-actions desktop-actions">
+    <button onclick="alertAction('Search clicked')">Search</button>
+    <button onclick="alertAction('Cart clicked')">Cart</button>
+    <button onclick="alertAction('Login clicked')">Login</button>
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#" onclick="alertAction('Home clicked')">Home</a>
+  <a href="#" onclick="alertAction('Products clicked')">Products</a>
+  <a href="#" onclick="alertAction('Categories clicked')">Categories</a>
+  <a href="#" onclick="alertAction('Contact clicked')">Contact</a>
+
+  <hr>
+
+  <a href="#" onclick="alertAction('Search clicked')">Search</a>
+  <a href="#" onclick="alertAction('Cart clicked')">Cart</a>
+  <a href="#" onclick="alertAction('Login clicked')">Login</a>
+</div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Shop Smart, Shop Easy</h1>
+      <p>A modern e-commerce UI with animations and fully working buttons.</p>
+      <button onclick="alertAction('Shop Now clicked')">Shop Now</button>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section">
+    <h2>Featured Products</h2>
+
+    <div class="products">
+      <div class="product">
+        <img src="Hphnes.jpg" alt="Product">
+        <h3>Wireless Headphones</h3>
+        <p>Premium sound quality with noise cancellation.</p>
+        <div class="price">₹2,999</div>
+        <button onclick="alertAction('Wireless Headphones added to cart')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="watch.jpg" alt="Product">
+        <h3>Smart Watch</h3>
+        <p>Fitness tracking with smart notifications.</p>
+        <div class="price">₹4,499</div>
+        <button onclick="alertAction('Smart Watch added to cart')">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Shoes.jpg" alt="Product">
+        <h3>Running Shoes</h3>
+        <p>Comfortable & stylish sports shoes.</p>
+        <div class="price">₹3,199</div>
+        <button onclick="alertAction('Running Shoes added to cart')">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 ShopEase | Created by Abhishek S</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
